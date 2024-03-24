@@ -25,8 +25,8 @@ export default function HeroWithSearch() {
     // targetRef.current?.scrollIntoView({ behaviour: "smooth" });
   }
   return (
-    <div className="md:flex md:mt-16">
-      <div className="pt-10 lg:pt-20">
+    <div className="md:flex md:mt-14">
+      <div className="mt-5 lg:mt-10">
         <p className=" mx-auto w-2/3 text-center font-bold  text-2xl">
           Are You In Search Of A Job? Find Your Dream Job.
         </p>
@@ -39,7 +39,7 @@ export default function HeroWithSearch() {
           />
           <button
             onClick={() => handleSearch(value)}
-            className="rounded-full px-2 py-1  bg-orange-950 text-white absolute ml-[118px] top-1 hover:bg-orange-800"
+            className="rounded-full px-2 py-1  bg-orange-950 text-white absolute ml-[135px] top-1 hover:bg-orange-800"
           >
             Search
           </button>
@@ -49,8 +49,8 @@ export default function HeroWithSearch() {
       <div className="mt-10 md:mt-5">
         <Image
           src={heroImg}
-          width={600}
-          height={110}
+          width={1000}
+          height={10}
           alt="img"
           className="size-2/3 mx-auto md:size-3/4 rounded"
         />

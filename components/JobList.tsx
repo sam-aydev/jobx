@@ -14,12 +14,12 @@ export default function JobList({ sortedJobs }: any) {
       {sortedJobs?.map((job: any) => (
         <div
           key={job.id}
-          className="size-40 md:size-48 h-fit rounded bg-orange-200 space-x-4 flex justify-between flex-col "
+          className="size-44 md:size-48 h-fit rounded bg-orange-200 space-x-4 flex justify-between flex-col "
         >
           <div className="pt-2 px-2">
             <p
               style={{ backgroundColor: `${job.label}` }}
-              className=" px-2 rounded-full text-xs"
+              className=" px-2 rounded-full text-xs "
             >
               {job.title}
             </p>

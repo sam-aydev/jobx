@@ -14,20 +14,23 @@ export default function JobList({ sortedJobs }: any) {
       {sortedJobs?.map((job: any) => (
         <div
           key={job.id}
-          className="size-44 md:size-48 h-fit rounded bg-orange-200 space-x-4 flex justify-between flex-col "
+          className="size-[135px] md:size-48  rounded bg-orange-200 space-x-4 flex justify-between flex-col "
         >
           <div className="pt-2 px-2">
             <p
               style={{ backgroundColor: `${job.label}` }}
               className=" px-2 rounded-full text-xs "
             >
-              {job.title}
+              {`${job.title.slice(0, 10)}...`}
             </p>
           </div>
-          <div className="pt-6">
-            <p className="text-[16px] text-left font-bold">{job.title}</p>
+          <div className="pt-2 md:pt-6">
+            <p className="text-[16px] text-left font-bold">{`${job.title.slice(
+              0,
+              11
+            )}`}</p>
           </div>
-          <div className="md:-mt-4">
+          <div className="-mt-1 md:-mt-4">
             <p className="text-sm text-left">
               ${`${dollarLocale.format(job.salary)}`} per year
             </p>
